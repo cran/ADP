@@ -12,7 +12,7 @@
 #' rate of people who also adopt it as part of their life is more complicated
 #' since the adoption of a product is a subjective view of the individual.
 #' Mickey Kislev and Shira Kislev developed a formula to calculates the prevalence
-#' of users of a product to overcome this difficulty. The current calculator
+#' of users of a product to overcome this difficulty. The current dataseet
 #' assists in calculating the users of a product based on the prevalence of
 #' triers in the population.
 #'
@@ -29,7 +29,7 @@ ADP <- data.frame(triers_p = 1:100/100)
 ADP$user_p <- ADP$triers_p * 0.25 * exp(1.35*ADP$triers_p)
 ADP$ADP <- ADP$triers_p / ADP$user_p
 
-#' calculates the predicted prevalence of triers according to the users' rate
+#' Calculates the predicted prevalence of triers according to the users' rate
 #'
 #' This function develops a prediction of the triers' rate of an innovation in
 #' the market, according to the number of users.
@@ -49,8 +49,6 @@ ADP$ADP <- ADP$triers_p / ADP$user_p
 #' 0.7382
 #' # means that 74% of the population tried the product
 #' @export
-
-
 ptriers <- function(users) {
   if(users < 0 | users > 1){
     stop("users prevalence can be dafine in values between 0 to 1", call. = FALSE)
@@ -65,7 +63,7 @@ ptriers <- function(users) {
   }
 }
 
-#' calculates the predicted prevalence of users according to the triers' rate
+#' Calculates the predicted prevalence of users according to the triers' rate
 #'
 #' This function develops a prediction of the users' rate of an innovation in
 #' the market, according to the number of triers
@@ -82,7 +80,7 @@ ptriers <- function(users) {
 #' rate of people who also adopt it as part of their life is more complicated
 #' since the adoption of a product is a subjective view of the individual.
 #' Mickey Kislev and Shira Kislev developed a formula to calculates the prevalence
-#' of users of a product to overcome this difficulty. The current calculator
+#' of users of a product to overcome this difficulty. The current function
 #' assists in calculating the users of a product based on the prevalence of
 #' triers in the population.
 #' @seealso \code{\link{ptriers}}, \code{\link{adp.t}}, and \code{\link{adp.u}}
@@ -107,7 +105,7 @@ pusers <- function(triers) {
   }
 }
 
-#' calculates the predicted adoption probability according to the triers rate
+#' Calculates the predicted adoption probability according to the triers' rate
 #'
 #' #' This function develops a prediction of the adoption rate of an innovation in
 #' the market, according to the number of triers
@@ -143,7 +141,7 @@ adp.t <- function(triers) {
   }
 }
 
-#' calculates the predicted adoption probability according to the triers rate
+#' Calculates the predicted adoption probability according to the users' rate
 #'
 #' This function develops a prediction of the adoption rate of an innovation in
 #' the market, according to the number of users.

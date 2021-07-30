@@ -2,7 +2,7 @@
 % Please edit documentation in R/ADP.R
 \name{adp.t}
 \alias{adp.t}
-\title{calculates the predicted adoption probability according to the triers rate}
+\title{Calculates the predicted adoption probability according to the triers' rate}
 \source{
 Kislev, Mickey M. & Kislev, Shira, (2020). The Market Trajectory of a
 Radically New Product: E-Cigarettes. IJMS 12(4):63-92, DOI:\href{https://www.ccsenet.org/journal/index.php/ijms/article/view/0/44285}{10.5539/ijms.v12n4p63}

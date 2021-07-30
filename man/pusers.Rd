@@ -2,7 +2,7 @@
 % Please edit documentation in R/ADP.R
 \name{pusers}
 \alias{pusers}
-\title{calculates the predicted prevalence of users according to the triers' rate}
+\title{Calculates the predicted prevalence of users according to the triers' rate}
 \usage{
 pusers(triers)
 }
@@ -25,7 +25,7 @@ a person tried a product even once in his life or not. While measuring the
 rate of people who also adopt it as part of their life is more complicated
 since the adoption of a product is a subjective view of the individual.
 Mickey Kislev and Shira Kislev developed a formula to calculates the prevalence
-of users of a product to overcome this difficulty. The current calculator
+of users of a product to overcome this difficulty. The current function
 assists in calculating the users of a product based on the prevalence of
 triers in the population.
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/ADP.R
 \name{ptriers}
 \alias{ptriers}
-\title{calculates the predicted prevalence of triers according to the users' rate}
+\title{Calculates the predicted prevalence of triers according to the users' rate}
 \source{
 Kislev, Mickey M. & Kislev, Shira, (2020). The Market Trajectory of a
 Radically New Product: E-Cigarettes. IJMS 12(4):63-92, DOI:\href{https://www.ccsenet.org/journal/index.php/ijms/article/view/0/44285}{10.5539/ijms.v12n4p63}
