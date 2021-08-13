@@ -1,8 +1,8 @@
 Package: ADP
 Type: Package
 Title: Adoption Probability, Triers and Users Rate of a New Product
-Version: 0.1.5
-Date: 2021-07-28
+Version: 0.1.6
+Date: 2021-08-13
 Authors@R: c(
   person("Mickey", "Kislev", email = "mickeykislev@researchgap.ac", role=c("cre")),
   person("Shira", "Kislev", role=c("aut")))
@@ -12,8 +12,8 @@ License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-07-30 08:26:48 UTC; micke
+Packaged: 2021-08-13 10:34:43 UTC; micke
 Author: Mickey Kislev [cre],
   Shira Kislev [aut]
 Repository: CRAN
-Date/Publication: 2021-07-30 11:40:08 UTC
+Date/Publication: 2021-08-13 10:50:02 UTC

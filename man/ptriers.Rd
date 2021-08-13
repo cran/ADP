@@ -28,7 +28,8 @@ innovation according to known users rate in that population and measured in a su
 # 50\% rate of users
 ptriers(0.5)
 0.7382
-# means that 74\% of the population tried the product
+# means that 74\% of the population tried the product, in case that 50\% of
+# the population are using it.
 }
 \seealso{
 \code{\link{pusers}}, \code{\link{adp.t}}, and \code{\link{adp.u}}

@@ -33,7 +33,8 @@ triers in the population.
 # 50\% rate of triers
 pusers(0.5)
 0.2455041
-# means that 24.5\% of the population uses the product regularly
+# means that 24.5\% of the population uses the product regularly, in case
+# that 50\% of the population already tried it.
 }
 \references{
 Kislev, Mickey M. & Kislev, Shira, (2020). The Market Trajectory of a

@@ -29,7 +29,8 @@ innovation according to known triers rate measured in a survey.
 # 50\% rate of triers
 adp.t(0.5)
 0.4910082
-# means that half of the those who will try the product, eventually will adopt the product
+# means that every second person who tries the product will adopt it, in case
+# that 50\% of the population already tried it.
 }
 \seealso{
 \code{\link{pusers}}, \code{\link{ptriers}}, and \code{\link{adp.u}}

@@ -27,7 +27,7 @@
 #' Radically New Product: E-Cigarettes. IJMS 12(4):63-92, DOI:\href{https://www.ccsenet.org/journal/index.php/ijms/article/view/0/44285}{10.5539/ijms.v12n4p63}
 ADP <- data.frame(triers_p = 1:100/100)
 ADP$user_p <- ADP$triers_p * 0.25 * exp(1.35*ADP$triers_p)
-ADP$ADP <- ADP$triers_p / ADP$user_p
+ADP$ADP <- ADP$user_p / ADP$triers_p
 
 #' Calculates the predicted prevalence of triers according to the users' rate
 #'
@@ -47,7 +47,8 @@ ADP$ADP <- ADP$triers_p / ADP$user_p
 #' # 50% rate of users
 #' ptriers(0.5)
 #' 0.7382
-#' # means that 74% of the population tried the product
+#' # means that 74% of the population tried the product, in case that 50% of
+#' # the population are using it.
 #' @export
 ptriers <- function(users) {
   if(users < 0 | users > 1){
@@ -90,7 +91,8 @@ ptriers <- function(users) {
 #' # 50% rate of triers
 #' pusers(0.5)
 #' 0.2455041
-#' # means that 24.5% of the population uses the product regularly
+#' # means that 24.5% of the population uses the product regularly, in case
+#' # that 50% of the population already tried it.
 #' @export
 
 pusers <- function(triers) {
@@ -124,7 +126,8 @@ pusers <- function(triers) {
 #' # 50% rate of triers
 #' adp.t(0.5)
 #' 0.4910082
-#' # means that half of the those who will try the product, eventually will adopt the product
+#' # means that every second person who tries the product will adopt it, in case
+#' # that 50% of the population already tried it.
 #' @export
 
 
@@ -160,7 +163,8 @@ adp.t <- function(triers) {
 #' # 50% rate of users
 #' adp.u(0.5)
 #' 0.6773232
-#' # means that 2/3 of the those who will try the product, eventually will adopt the product
+#' # means that two out of three people who try the product will adopt it,
+#' # in case that 50% of the population already uses it.
 #' @export
 adp.u <- function(users) {
   if(users < 0 | users > 1){

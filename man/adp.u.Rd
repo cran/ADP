@@ -29,7 +29,8 @@ innovation according to known users rate measured in a survey.
 # 50\% rate of users
 adp.u(0.5)
 0.6773232
-# means that 2/3 of the those who will try the product, eventually will adopt the product
+# means that two out of three people who try the product will adopt it,
+# in case that 50\% of the population already uses it.
 }
 \seealso{
 \code{\link{pusers}}, \code{\link{ptriers}}, and \code{\link{adp.t}}
